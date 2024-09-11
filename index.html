@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Forms</title>
+</head>
+
+<body>
+    <form action="handler.js" method="">
+        <!-- <label>
+            Your name
+            <input type="text" name="user-name" placeholder="Your name">
+        </label> -->
+
+        <div>
+            <label for="userName">Your name</label>
+            <input id="userName" type="text" name="user-name" placeholder="Your name">
+        </div>
+        <div>
+            <label for="userEmail">Your email</label>
+            <input id="userEmail" type="email" name="user-email" placeholder="Your email">
+        </div>
+        <div>
+            <label for="userPassword">Your password</label>
+            <input id="password" type="password" name="user-password" placeholder="Your password">
+        </div>
+        <div>
+            <label for="age">Your age</label>
+            <input id="age" type="number" name="age" placeholder="Your age">
+        </div>
+        <div>
+            <label for="birthday">Your birthday</label>
+            <input id="birthday" type="date" name="birthday" placeholder="Your birthday">
+        </div>
+        <div>
+            <label for="avatar">Your avatar</label>
+            <input multiple id="avatar" type="file" name="avatar" placeholder="Your avatar">
+        </div>
+
+        <fieldset>
+            <legend>Sex</legend>
+            <label> 
+                <input type="radio" name="sex" value="man" checked>
+                Man
+            </label>
+            <label>
+                <input type="radio" name="sex" value="woman">
+                Women
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Technologies</legend>
+            <label> 
+                <input type="checkbox" name="technology" value="html" checked>
+                HTML
+            </label>
+            <label>
+                <input type="checkbox" name="technology" value="Css">
+                CSS
+            </label>
+            <label>
+                <input type="checkbox" name="technology" value="JS">
+                JS
+            </label>
+        </fieldset>
+        <div>
+            <select name="city">
+                <option value="Paris">Paris</option>
+                <option value="London" selected>London</option>
+                <option value="Rom">Rom</option>
+            </select>
+            <select name="city" multiple>
+                <option value="Paris">Paris</option>
+                <option value="London" selected>London</option>
+                <option value="Rom">Rom</option>
+            </select>
+        </div>
+        
+        <div>
+            <label for="country">Country</label>
+            <input id="country" list="countryeslist" name="country">
+            <datalist id="countryeslist">
+                <option value="France">Paris</option>
+                <option value="England" selected>London</option>
+                <option value="Italy">Rom</option>
+            </datalist>
+        </div>
+
+        <textarea name="description" id="" placeholder="Type some text"></textarea>
+
+        <div contenteditable></div>
+
+        <input type="submit" value="Submit">
+        <button type="reset">Reset</button>
+    </form>
+
+</body>
+
+</html>
